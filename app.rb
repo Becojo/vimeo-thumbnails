@@ -11,15 +11,15 @@ end
 
 def get_thumbnail_url(id)
   url = $redis.get(id)
-  
+
   return url unless url.nil?
-  
+
   result = Net::HTTP.get(URI.parse("http://vimeo.com/api/v2/video/#{id}.json"))
   json = JSON.parse(result)
   url = json[0]['thumbnail_large']
-  
+
   $redis.set(id, url)
-  
+
   url
 end
 
