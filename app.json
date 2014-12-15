@@ -1,0 +1,9 @@
+{
+  "name": "vimeo-thumbnails",
+  "description": "Ruby app to redirect to a video thumbail",
+  "repository": "https://github.com/Becojo/vimeo-thumbnails",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["ruby", "sinatra", "vimeo", "utility"],
+  "addons": ["rediscloud"],
+  "success_url": "/103589686"
+}
